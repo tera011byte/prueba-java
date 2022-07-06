@@ -11,5 +11,16 @@ public class Principal {
         maserati.mensaje();
         harley.mensaje();
 
+        Vehiculo vehi = new Vehiculo(4, "motor", 2000) {
+            @Override
+            void metodo(int neumaticos) {
+                System.out.println("soy clase padre");
+            }
+        };
+
+        vehi.metodo(4);
+
+        }
+
     }
-}
+
